@@ -2,10 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=https://aaqibjeelani.github.io/ajvirus/">
+    <meta http-equiv="refresh" content="5;url=https://aaqibjeelani.github.io/ajvirus/">
     <title>Redirecting...</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .spinner {
+            border: 8px solid #333;
+            border-top: 8px solid #e74c3c;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        p {
+            margin: 0;
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #e74c3c;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #c0392b;
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected, <a href="https://aaqibjeelani.github.io/ajvirus/">click here</a>.</p>
+    <div class="container">
+        <div class="spinner"></div>
+        <p>Redirecting...</p>
+        <p>If you are not redirected, <a href="https://aaqibjeelani.github.io/ajvirus/" class="button">click here</a>.</p>
+    </div>
 </body>
 </html>
