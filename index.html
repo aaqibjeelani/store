@@ -6,22 +6,37 @@
     <title>Redirecting...</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Courier New', monospace;
+            color: #00ff00;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
             margin: 0;
+            background-image: url('gb.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .container {
             text-align: center;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .code {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            overflow: auto;
+            max-height: 60vh;
         }
 
         .spinner {
-            border: 8px solid #333;
-            border-top: 8px solid #e74c3c;
+            border: 18px solid #00ff00;
+            border-top: 18px solid #e74c3c;
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -34,9 +49,27 @@
             100% { transform: rotate(360deg); }
         }
 
+        .typing-text {
+            font-size: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #00ff00;
+            margin: 0 auto;
+            letter-spacing: 2px;
+            animation: typing 2s steps(22) infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
         p {
             margin: 0;
-            color: #555;
         }
 
         .button {
@@ -59,9 +92,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="spinner"></div>
-        <p>Please wait...</p>
-        <p><a href="https://aaqibjeelani.github.io/ajvirus/" class="button">Get Started</a>.</p>
-    </div>
-</body>
-</html>
+       <center> <div class="spinner"></div> </center>
+        <p class="typing-text">Please wait while we load our Website...</p>
+        <div class="code">
+            <p>Welcome to AJ Virus, your trusted partner in software solutions. Founded by Aaqib Jeelani, our company is driven by a passion for delivering cutting-edge technology that empowers businesses. With a focus on innovation, reliability, and user-centric design, we take pride in developing software solutions that streamline operations and enhance productivity.</p>
+        </div>
+        <p><a href="https://aaqibjeelani.github.io/ajvirus/" class="button">click here to begin</a>.</p>
